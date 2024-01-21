@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    font-size: medium;
+    color: rgb(88, 88, 88);
+}
+
+h3 {
+    font-size: 22px;
+}
+
+header {
+    background-color: rgb(43, 128, 57);
+    color: rgb(245, 245, 245);
+    margin: 5px;
+    padding: 20px;
+}
+
+.characterCounter {
+    border: solid 1px;
+    border-color: rgb(201, 201, 201);
+    margin: 5px;
+    padding: 20px;
+}
+
+.wordCounter {
+    border: solid 1px;
+    border-color: rgb(201, 201, 201);
+    margin: 5px;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    color: rgb(245, 245, 245);
+    margin: 5px;
+    padding: 20px;
+}
