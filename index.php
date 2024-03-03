@@ -21,11 +21,25 @@
   <div class="characterCounter">
     <h4>Character counter</h4>
 
+
+ 
+
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+
+    <br><br>
+   <textarea name="comment" rows="5" cols="40"><?php echo $characters;?></textarea>
+   <br><br>
+
+    <input type="submit" name="characters" value="characters">  
+
+    </form>
+
     <?php
 
     $characters = array(
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus, tellus condimentum posuere venenatis, risus quam sodales sem, vitae molestie quam urna nec tortor. Vivamus dapibus gravida urna, eu pulvinar ipsum cursus ut. Duis purus augue, porta eget erat non, feugiat elementum odio. Fusce et suscipit nibh. Pellentesque pellentesque congue sapien ut porta. Ut rhoncus risus non tellus molestie finibus. Morbi dictum tincidunt lectus nec aliquam. Suspendisse potenti. Curabitur ac justo sapien. Vivamus vitae rhoncus mauris, nec imperdiet nibh.
-    Ut eu odio non metus dictum maximus. Donec gravida dapibus purus eu dictum. Proin lobortis lobortis nisi eget facilisis. Donec sed ultricies purus. Mauris non ",
+      "Lorem ipsum dolor sit ame, consectetur adipiscing elit. Curabitur faucibus, tellus condimentum posuere venenatis, risus quam sodales sem, vitae molestie quam urna nec tortor. Vivamus dapibus gravida urna, eu ipsum cursus ut. Duis purus augue, porta eget erat non, feugiat elementum odio. Fusce et suscipit nibh. Pellentesque pellentesque congue sapieut porta. Ut rhoncus risuon tellus molestie finibus. Morbi dictum tincidunt lectus nec aliquam. Suspendisse potenti. Curabitur ac justo sapien. Vivamus vitae rhoncus mauris, nec imperdiet nibh.
+      Ut eu odio non metus dictum maximus. Donec gravida dapibus purus eu dictum. Proin lobortis lobortis nisi eget facilisis. Donec sed ultricies purus. Mauris non",
     );
 
     foreach ($characters as $character) {
@@ -38,7 +52,6 @@
       echo ("<p>$character</p>");
 
     }
-
     ?>
   </div>
 
